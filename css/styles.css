@@ -1,0 +1,384 @@
+
+:root {
+  --primary-color: #357b70;
+  --secondary-color: #e0b354;
+  --bottom-border: #2b2b2b;
+  --color-visited: #008080;
+  --color-active: #40E0D0;
+  --grid-color: #b2d9d9;
+  --background-color: #fff;
+  --table-border: #000;
+  --color-change1: #edc655;
+  --color-change2: #fcffad;
+  --color-change3: #f76414;
+  --contact-background: #b2d9d9;
+  --light-font: #000;
+  --span-color: #9ACD32;
+
+
+  --heading-font-weight: 700;
+  --padding-left: 35px;
+  --padding-right: 35px;
+}
+
+/* box settings on all pages */
+* {
+  box-sizing: border-box;
+}
+
+/* body specs on all pages */
+body {
+   font-family: 'Lora', sans-serif;
+   font-weight: 400;
+   font-size: 16px;
+  /* Sets the font size to 16px */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 */
+}
+
+/* title specs */
+h1 {
+  font-size: 25px;
+  font-weight: var(--heading-font-weight);
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: var(--heading-font-weight);
+}
+
+h3 {
+  font-size: 18px;
+  font-weight: var(--heading-font-weight);
+}
+
+/* link specs on all pages */
+a {
+  color: var(--primary-color);
+  transition-duration: 0.5s;
+  transition-property: opacity;
+}
+
+a:hover, a:focus {
+  /* No underlining when hovering over a link */
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+a:visited {
+  /* visited link */
+  color: var(--color-visited);
+}
+
+a:active {
+  /* selected link */
+  color: var(--color-active);
+}
+
+/* button specs on all pages */
+.button, button {
+  /* overwrites browser defaults and resets the border */
+  border: none;
+  display: inline-block;
+  /* takes the font from the outer container */
+  font-family: inherit;
+  /* styles the button */
+  background-color: var(--primary-color);
+  color: var(--light-font);
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  /* width of the border, type, color */
+  border-bottom: 2px solid var(--bottom-border);
+  transition-duration: 0.2s;
+  transition-property: opacity;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus {
+  /* lets the mouse appear as a hand when hovering over the button */
+  cursor: pointer;
+  /* reduces the opacity of the button to 80% */
+  opacity: 0.8;
+}
+
+/* header on all pages, includes the logo and the navbar */
+.page-header {
+  display: flex;
+  position: fixed;
+  background-color: var(--background-color);
+  border-bottom: 1px solid var(--bottom-border);
+  max-width: 2500px;
+  /* only added max-width value because the exericse assumed it was added already - change it later */
+  margin: auto;
+  width: 100%;
+  padding: 20px;
+}
+
+.page-header__item {
+  flex: 0 1 200px;
+}
+
+/* logo specs */
+.page-header__item:first-child {
+  padding: 10px;
+  height: 130px;
+}
+
+/* navbar specs */
+.page-header__item:last-child {
+  flex-grow: 1;
+  text-align: right;
+  padding-top: 15px;
+  padding-right: 15px;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-list li {
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.navigation-list__item--active {
+  text-decoration: none;
+}
+
+/* profile section from index.html, first the picture, then  */
+.profile__portrait {
+  float: left;
+  max-width: 250px;
+  height: auto;
+  margin-right: 40px;
+  margin-left: 40px;
+  border-radius: 50%;
+}
+
+.profile {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 250px;
+  padding-left: var(--padding-left);
+  padding-right: var(--padding-right);
+}
+
+.profile__text {
+  flex: 1 1 100px;
+}
+
+/* from about.html, above the table*/
+.about {
+  max-width: 700px;
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-left: var(--padding-left);
+  padding-right: var(--padding-right);
+}
+
+/* Experience table section from about.html*/
+table.experience {
+  border-collapse: collapse;
+  margin: 0 auto;
+  max-width: 70%;
+  padding-left: var(--padding-left);
+  padding-right: var(--padding-right);
+}
+
+table.experience td, table.experience th {
+  border: 1px solid var(--table-border);
+  padding: 10px;
+  text-align: center;
+}
+
+/* centering text */
+.myself {
+  text-align: center;
+  padding-left: var(--padding-left);
+  padding-right: var(--padding-right);
+  padding-bottom: 40px;
+}
+
+/* removing list dots */
+.myself-list {
+  list-style-type: none;
+}
+
+/* illustration specs */
+.berlin-illustration {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+}
+
+@keyframes color-change {
+  0% {
+    fill: var(--color-change1);
+  }
+  50% {
+    fill: var(--color-change2);
+  }
+  100% {
+    fill: var(--color-change3);
+  }
+}
+
+
+/* this is the order of the animation properties:
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+} */
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* from work.html, the grid section*/
+.work {
+  max-width: 1500px;
+  margin: 0 auto;
+  padding-top: 200px;
+  padding-left: var(--padding-left);
+  padding-right: var(--padding-right);
+}
+
+/* from contact.html*/
+.contact-form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px;
+  padding-top: 200px;
+  background-color: var(--contact-background);
+}
+
+.contact-form * {
+  width: 100%;
+}
+
+.contact-details{
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* CV download section*/
+.download {
+  text-align: center;
+  padding: 50px;
+}
+
+/* Grid fallback*/
+
+.grid__item {
+  display: inline-block;
+  width: 33%;
+}
+
+/* Styling CSS grid*/
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+.grid__item {
+  background-color: var(--grid-color);
+  color: var(--light-font);
+  padding: 10px;
+  /* Set width to auto*/
+  width: auto;
+}
+
+.grid__item:last-child {
+  grid-column: 3 / 3;
+  grid-row: 1 / 3;
+}
+
+.page-footer {
+  clear: both;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* This coming section is for highlighting words (the span)*/
+#web {
+  padding: 2px 5px;
+  display: inline-block;
+  background: var(--span-color);
+}
+
+#CV {
+  color: var(--light-font);
+}
+
+/* text under profile picture */
+@media all and (max-width: 650px) {
+  .profile__portrait {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+  }
+}
+
+@media all and (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media all and (min-width: 500px) and (max-width: 750px){
+  .grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 750px) {
+  .grid {
+    grid-gap: 10px;
+  }
+  .grid__item:last-child {
+    grid-column: auto / auto;
+    grid-row: auto / auto;
+  }
+  h1 {
+    font-size: 22px;
+  }
+}

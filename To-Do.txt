@@ -1,0 +1,12 @@
+☐ todo ☑ completed ☒ postponed
+
+☐ Get a better profile picture - res, size, etc.
+☐ Get a good quality picture for the background of the header / menu
+☐ Come up with a color palette for the whole site - design buttons and links
+☐ Create a logo, a favicon and an action button that fit this palette
+☐ Design a contact form
+☐ Purchase a domain
+☐ Create a title, name, own email address, etc.
+☐ Set up contact methods: LinkedIn, GitHub, Twitter, Facebook (?) - edit descriptions, update info, pictures, etc.
+☐ Clear up documents (comments mostly in CSS file)
+☐ Fix SVG images (sizes should be correct on different sizes of displays - for later)
