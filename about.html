@@ -3,8 +3,9 @@
 <html>
 
   <head>
-    <meta name="description" content="Lilla Pulay - Portfolio" charset="utf-8">
+    <meta name="description" content="Lilla Pulay - Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
     <link rel="shortcut icon" href="img/favicon.ico">
       <!-- The example page in CodePen had: type="image/x-icon" for the favicon, if I insert it, my LOGO disappears - look up solution -->
     <title> About me</title>
@@ -44,6 +45,17 @@
       <p>
         My goal is to pursue a fulfilling career that I'm really passionate about.
         I aspire to become a <span id="web">Front-End Developer</span> with a strong knowledge of <span id="web">User Experience</span> principles.
+        <!-- I have all spans on a separate ID and targeted them in CSS with #web, but it counts as an error due to duplicate ID - this is one of the ways I tried fixing it,
+        but nothing seems to work:
+
+      .about span {
+          padding: 2px 5px;
+          display: inline-block;
+          background: var(--span-color);
+        }
+
+        When I tried this, I changed "span id="web"" to span class="about" - didn't work as the green background didn't appear.
+      -->
       </p>
     </div>
 
