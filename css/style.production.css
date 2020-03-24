@@ -69,7 +69,7 @@ a:active {
   font-family: inherit;
   /* styles the button */
   background-color: #269393;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -90,7 +90,7 @@ button {
   font-family: inherit;
   /* styles the button */
   background-color: #269393;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
@@ -391,7 +391,7 @@ table.experience th {
 
 .grid__item {
   background-color: #b2d9d9;
-  color: #000;
+  color: #fff;
   padding: 10px;
   /* Set width to auto*/
   width: auto;
@@ -420,14 +420,21 @@ table.experience th {
   padding-top: 50px;
 }
 
+.about span {
+    padding: 2px 5px;
+    display: inline-block;
+    background: #9ACD32;
+  }
+
+/* This was marked as an error due to several IDs in a row, replaced by ".about span" - keeping #CV as it only occurs once and I'd like to remember this method
 #web {
   padding: 2px 5px;
   display: inline-block;
-  background: #9ACD32
-}
+  background: var(--span-color)
+} */
 
 #CV {
-  color: #000;
+  color: #fff;
 }
 
 /* text under profile picture */

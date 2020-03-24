@@ -12,7 +12,7 @@
   --color-change2: #fcffad;
   --color-change3: #f76414;
   --contact-background: #b2d9d9;
-  --light-font: #000;
+  --light-font: #fff;
   --span-color: #9ACD32;
 
 
@@ -339,11 +339,18 @@ table.experience td, table.experience th {
   padding-top: 50px;
 }
 
+.about span {
+    padding: 2px 5px;
+    display: inline-block;
+    background: var(--span-color);
+  }
+
+/* This was marked as an error due to several IDs in a row, replaced by ".about span" - keeping #CV as it only occurs once and I'd like to remember this method
 #web {
   padding: 2px 5px;
   display: inline-block;
   background: var(--span-color)
-}
+} */
 
 #CV {
   color: var(--light-font);
