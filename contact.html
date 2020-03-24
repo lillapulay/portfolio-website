@@ -3,8 +3,9 @@
 <html>
 
   <head>
-    <meta name="description" content="Lilla Pulay - Portfolio" charset="utf-8">
+    <meta name="description" content="Lilla Pulay - Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
     <link rel="shortcut icon" href="img/favicon.ico">
       <!-- The example page in CodePen had: type="image/x-icon" for the favicon, if I insert it, my LOGO disappears - look up solution -->
     <title> Contact me</title>
@@ -38,7 +39,8 @@
 
     <div class="contact-form">
       <h1>Send me a message</h1>
-      <form action="" method="post" id="contact-form">
+      <form action="#" method="post" id="contact-form">
+        <!-- I added the "#" in order to pass code linting, not sure it is the correct solution or it breaks something else, so far seems okay-->
         <label class="standard-label" for="contact-email"> Email*: </label>
         <input type="email" id="contact-email" required>
         <br><br>
