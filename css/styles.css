@@ -4,7 +4,7 @@
   --secondary-color: #e0b354;
   --bottom-border: #2b2b2b;
   --color-visited: #008080;
-  --color-active: #40E0D0;
+  --color-active: #40e0d0;
   --grid-color: #b2d9d9;
   --background-color: #fff;
   --table-border: #000;
@@ -13,9 +13,7 @@
   --color-change3: #f76414;
   --contact-background: #b2d9d9;
   --light-font: #fff;
-  --span-color: #9ACD32;
-
-
+  --span-color: #9acd32;
   --heading-font-weight: 700;
   --padding-left: 35px;
   --padding-right: 35px;
@@ -320,7 +318,6 @@ table.experience td, table.experience th {
 
 .grid__item {
   background-color: var(--grid-color);
-  color: var(--light-font);
   padding: 10px;
   /* Set width to auto*/
   width: auto;

@@ -57,7 +57,7 @@ a:visited {
 
 a:active {
   /* selected link */
-  color: #40E0D0;
+  color: #40e0d0;
 }
 
 /* button specs on all pages */
@@ -391,7 +391,6 @@ table.experience th {
 
 .grid__item {
   background-color: #b2d9d9;
-  color: #fff;
   padding: 10px;
   /* Set width to auto*/
   width: auto;
@@ -423,7 +422,7 @@ table.experience th {
 .about span {
     padding: 2px 5px;
     display: inline-block;
-    background: #9ACD32;
+    background: #9acd32;
   }
 
 /* This was marked as an error due to several IDs in a row, replaced by ".about span" - keeping #CV as it only occurs once and I'd like to remember this method
