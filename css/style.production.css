@@ -35,7 +35,7 @@ h3 {
 
 /* link specs on all pages */
 a {
-  color: #357b70;
+  color: #269393;
   -webkit-transition-duration: 0.5s;
        -o-transition-duration: 0.5s;
           transition-duration: 0.5s;
@@ -68,7 +68,7 @@ a:active {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the button */
-  background-color: #357b70;
+  background-color: #269393;
   color: #000;
   text-decoration: none;
   padding: 10px;
@@ -89,7 +89,7 @@ button {
   /* takes the font from the outer container */
   font-family: inherit;
   /* styles the button */
-  background-color: #357b70;
+  background-color: #269393;
   color: #000;
   text-decoration: none;
   padding: 10px;
