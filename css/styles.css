@@ -28,9 +28,9 @@
 
 /* body specs on all pages */
 body {
-   font-family: 'Lora', sans-serif;
-   font-weight: 400;
-   font-size: 16px;
+  font-family: 'Lora', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   /* Sets the font size to 16px */
   line-height: 1.6;
   /* Sets the line-height to 1.6 */
@@ -205,6 +205,7 @@ table.experience td, table.experience th {
 /* removing list dots */
 .myself-list {
   list-style-type: none;
+  padding-left: 0px;
 }
 
 /* illustration specs */
@@ -338,11 +339,10 @@ table.experience td, table.experience th {
   padding-top: 50px;
 }
 
-/* This coming section is for highlighting words (the span)*/
 #web {
   padding: 2px 5px;
   display: inline-block;
-  background: var(--span-color);
+  background: var(--span-color)
 }
 
 #CV {
