@@ -10,7 +10,7 @@
     <title> Contact me</title>
     <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.production.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
 
   <body>
@@ -35,10 +35,10 @@
       </nav>
     </header>
 
+<!-- Hiding contact form for now
     <div class="contact-form">
       <h1>Send me a message</h1>
       <form action="#" method="post" id="contact-form">
-        <!-- I added the "#" in order to pass code linting as it created an error, not sure it is the correct solution or it breaks something else, so far seems okay-->
         <label class="standard-label" for="contact-email"> Email*: </label>
         <input type="email" id="contact-email" required>
         <br><br>
@@ -53,26 +53,22 @@
         <button class="button__secondary" type="submit" value="Send message">Send message</button>
       </form>
     </div>
-
-    <br>
+  -->
 
     <div class="contact-details">
-      <h3>Contact details</h3>
-      <button class="button" type="submit" value="Contact me" onclick="window.open('mailto:pulaylilla@gmail.com')">Contact me</button>
-      <!--This might be the wrong way to do it, but haven't figured a better email button solution yet, will need to look into it-->
+      <h1>Contact details</h1>
       <p>
-      Lelystad <br>
-      Netherlands <br>
+      Location: Lelystad, Netherlands <br>
       <br>
+      Email: <a href="mailto:pulaylilla@gmail.com">pulaylilla@gmail.com</a><br>
       Phone: <a href="tel:+31622022917" aria-label="phone number +3 1. 6 2. 2 0 2. 2 9. 1 7.">+31 62 202 29 17</a><br>
       Skype: <a href="skype:pulaylilla_1">pulaylilla_1</a><br>
-      Email: <a href="mailto:pulaylilla@gmail.com">pulaylilla@gmail.com</a>
       </p>
     </div>
 
     <footer class="page-footer">
       <p>
-        Find me on
+        <span class="page-footer">Find me on</span>
       </p>
       <div class="social-media">
         <a href="https://github.com/lillapulay" target="_blank"><img src="img/github_icon.svg" alt="github" title="GitHub"></a>
