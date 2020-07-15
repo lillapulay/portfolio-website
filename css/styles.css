@@ -115,7 +115,7 @@ button:focus,
   display: flex;
   position: fixed;
   top: 0;
-  /*background-color: #f7e6d4;*/
+  background-color: white;
   border-bottom: 1px solid var(--bottom-border);
   max-width: 2500px;
   /* only added max-width value because the exericse assumed it was added already - change it later */
