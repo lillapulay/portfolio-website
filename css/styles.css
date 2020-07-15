@@ -1,7 +1,7 @@
-
 :root {
-  --primary-color: #269393;
-  --secondary-color: #e0b354;
+  --primary-color: #329ACD;
+  --secondary-color: #9ACD32;
+  --tertiary-color: #CD329A;
   --bottom-border: #2b2b2b;
   --color-visited: #008080;
   --color-active: #40e0d0;
@@ -32,7 +32,7 @@ body {
   /* Sets the font size to 16px */
   line-height: 1.6;
   /* Sets the line-height to 1.6 */
-  background-image: linear-gradient(to right, #f2d9bf, #f7e6d4);
+  /*background-image: linear-gradient(to right, #f2d9bf, #f7e6d4);*/
 }
 
 /* title specs */
@@ -115,7 +115,7 @@ button:focus,
   display: flex;
   position: fixed;
   top: 0;
-  background-color: #f7e6d4;
+  /*background-color: #f7e6d4;*/
   border-bottom: 1px solid var(--bottom-border);
   max-width: 2500px;
   /* only added max-width value because the exericse assumed it was added already - change it later */
@@ -278,22 +278,23 @@ table.experience td, table.experience th {
   padding-top: 80px;
 }
 
-
-/* from contact.html*/
-/*
-.contact-form {
-  max-width: 700px;
+.project {
+  max-width: 1500px;
   margin: 0 auto;
-  padding: 50px;
-  padding-top: 200px;
-  background-color: var(--contact-background);
-}*/
-
-/*
-.contact-form * {
-  width: 100%;
+  padding-top: 80px;
+  padding-left: var(--padding-left);
+  padding-right: var(--padding-right);
 }
-*/
+
+.project__picture{
+  float: right;
+  max-width: 550px;
+  height: auto;
+  margin-right: 40px;
+  margin-left: 40px;
+  border: 1px solid grey;
+  border-radius: 10%;
+}
 
 .contact-details{
   max-width: 700px;
@@ -346,7 +347,7 @@ table.experience td, table.experience th {
 
 .grid__item:last-child {
   grid-column: 3 / 3;
-  grid-row: 1 / 3;
+  grid-row: 1 / 4;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -382,7 +383,8 @@ table.experience td, table.experience th {
 
 /* text under profile picture */
 @media all and (max-width: 650px) {
-  .profile__portrait {
+  .profile__portrait,
+  .project__picture {
     display: block;
     width: 100%;
     max-width: 100%;
