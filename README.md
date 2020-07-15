@@ -9,4 +9,4 @@ I started building this website upon starting the CF Full-Stack Web Development 
 - contact form
 - navbar animation
 - design makeover
-
+- fixed footer
