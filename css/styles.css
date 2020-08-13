@@ -1,41 +1,34 @@
 :root {
-  --primary-color: #329ACD;
+  --primary-color: #008080;
   --secondary-color: #9ACD32;
-  --tertiary-color: #CD329A;
-  --bottom-border: #2b2b2b;
-  --color-visited: #008080;
-  --color-active: #40e0d0;
-  --grid-color: #008080;
+
+  --light-font: #fff;
+
+  --border-color: #9ab1be;
+  --active-color: #2b3811;
+  --visited-color: #9ACD32;
   --background-color: #fff;
-  --table-border: #000;
+
   --color-change1: #edc655;
   --color-change2: #fcffad;
   --color-change3: #f76414;
-  --contact-background: #b2d9d9;
-  --light-font: #fff;
-  --span-color: #9acd32;
+
   --heading-font-weight: 700;
   --padding-left: 35px;
   --padding-right: 35px;
 }
 
-/* box settings on all pages */
 * {
   box-sizing: border-box;
 }
 
-/* body specs on all pages */
 body {
   font-family: 'Lora', sans-serif;
   font-weight: 400;
   font-size: 16px;
-  /* Sets the font size to 16px */
   line-height: 1.6;
-  /* Sets the line-height to 1.6 */
-  /*background-image: linear-gradient(to right, #f2d9bf, #f7e6d4);*/
 }
 
-/* title specs */
 h1 {
   font-size: 25px;
   font-weight: var(--heading-font-weight);
@@ -51,46 +44,37 @@ h3 {
   font-weight: var(--heading-font-weight);
 }
 
-/* link specs on all pages */
 a {
-  color: var(--primary-color);
-  transition-duration: 0.5s;
-  transition-property: opacity;
+  color: var(--secondary-color);
+  text-decoration: none;
 }
 
 a:hover, a:focus {
-  /* No underlining when hovering over a link */
   text-decoration: none;
   cursor: pointer;
   opacity: 0.8;
   cursor: pointer;
+  font-style: italic;
 }
 
 a:visited {
-  /* visited link */
-  color: var(--color-visited);
+  color: var(--visited-color);
 }
 
 a:active {
-  /* selected link */
-  color: var(--color-active);
+  color: var(--active-color);
 }
 
-/* button specs on all pages */
 .button, button {
-  /* overwrites browser defaults and resets the border */
   border: none;
   display: inline-block;
-  /* takes the font from the outer container */
   font-family: inherit;
-  /* styles the button */
   background-color: var(--primary-color);
   color: var(--light-font);
   text-decoration: none;
   padding: 10px 25px;
   border-radius: 1px 15px;
-  /* width of the border, type, color */
-  border-bottom: 2px solid var(--bottom-border);
+  border-bottom: 2px solid var(--border-color);
   transition-duration: 0.5s;
   transition-property: opacity;
 }
@@ -99,26 +83,19 @@ button:hover,
 button:focus,
 .button:hover,
 .button:focus {
-  /* lets the mouse appear as a hand when hovering over the button */
   cursor: pointer;
-  /* reduces the opacity of the button to 80% */
   opacity: 0.8;
 }
 
-.button__secondary {
-  background: #9acd32;
-  color: #000;
+a.button {
+  color: white;
 }
 
-/* header on all pages, includes the logo and the navbar */
 .page-header {
   display: flex;
   position: fixed;
   top: 0;
-  background-color: white;
-  border-bottom: 1px solid var(--bottom-border);
-  max-width: 2500px;
-  /* only added max-width value because the exericse assumed it was added already - change it later */
+  background-color: var(--primary-color);
   margin: auto;
   width: 100%;
   height: 60px;
@@ -131,7 +108,7 @@ button:focus,
 
 /* logo specs */
 .page-header__item:first-child {
-  padding-left: 20px;
+  padding-left: 10px;
   height: 50px;
 }
 
@@ -141,6 +118,10 @@ button:focus,
   text-align: right;
   padding-top: 5px;
   padding-right: 15px;
+}
+
+a.navigation-list {
+  color: var(--secondary-color);
 }
 
 .navigation-list {
@@ -153,74 +134,29 @@ button:focus,
 }
 
 .navigation-list__item--active {
-  text-decoration: none;
-}
-
-/* profile section from index.html, first the picture, then  */
-.profile__portrait {
-  float: left;
-  max-width: 250px;
-  height: auto;
-  margin-right: 40px;
-  margin-left: 40px;
-  border-radius: 50%;
+  font-weight: 700;
 }
 
 .profile {
-  max-width: 700px;
+  max-width: 60%;
   margin: 0 auto;
-  padding-top: 250px;
-  padding-left: var(--padding-left);
-  padding-right: var(--padding-right);
+  padding-top: 10%;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .profile__text {
   flex: 1 1 100px;
 }
 
-/* from about.html, above the table*/
-.about {
-  max-width: 700px;
-  margin: 0 auto;
-  padding-top: 80px;
-  padding-left: var(--padding-left);
-  padding-right: var(--padding-right);
+.profile h1 {
+  margin-top: 15%;
 }
 
-/* Experience table section from about.html*/
-table.experience {
-  border-collapse: collapse;
-  margin: 0 auto;
-  max-width: 70%;
-  padding-left: var(--padding-left);
-  padding-right: var(--padding-right);
-}
-
-table.experience td, table.experience th {
-  border: 1px solid var(--table-border);
-  padding: 10px;
-  text-align: center;
-}
-
-/* centering text */
-.myself {
-  text-align: center;
-  padding-left: var(--padding-left);
-  padding-right: var(--padding-right);
-  padding-bottom: 40px;
-}
-
-/* removing list dots */
-.myself-list {
-  list-style-type: none;
-  padding-left: 0px;
-}
-
-/* illustration specs */
 .berlin-illustration {
-  display: block;
-  margin: auto;
-  max-width: 80%;
+  float: left;
+  max-width: 60%;
+  height: auto;
 }
 
 @keyframes color-change {
@@ -265,6 +201,57 @@ table.experience td, table.experience th {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
+/* about.html*/
+.profile__portrait {
+  float: left;
+  max-width: 250px;
+  height: auto;
+  margin-right: 40px;
+  margin-left: 40px;
+  border-radius: 50%;
+}
+
+.about {
+  max-width: 60%;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-left: var(--padding-left);
+  padding-right: var(--padding-right);
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.about__text {
+  flex: 1 1 100px;
+}
+
+span {
+  padding: 0px 5px;
+  display: inline-block;
+  background: var(--secondary-color);
+  border-radius: 1px 15px;
+}
+
+span.emoji {
+background: none;
+}
+
+.resume-button {
+  margin: 0 auto;
+  text-align: center;
+  color: var(--light-font);
+}
+
+.skills-tools {
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+b {
+  text-decoration:underline;
+  text-decoration-color: var(--secondary-color);
+}
+
 /* from work.html, the grid section*/
 .work {
   max-width: 1500px;
@@ -284,6 +271,7 @@ table.experience td, table.experience th {
   padding-top: 80px;
   padding-left: var(--padding-left);
   padding-right: var(--padding-right);
+  padding-bottom: 80px;
 }
 
 .project__picture{
@@ -296,7 +284,7 @@ table.experience td, table.experience th {
   border-radius: 10%;
 }
 
-.contact-details{
+.contact-details {
   max-width: 700px;
   margin: 0 auto;
   padding: 50px;
@@ -306,14 +294,7 @@ table.experience td, table.experience th {
 }
 
 
-/* CV download section*/
-.download {
-  text-align: center;
-  padding: 50px;
-}
-
 /* Grid fallback*/
-
 .grid__item {
   display: inline-block;
   width: 33%;
@@ -329,20 +310,24 @@ table.experience td, table.experience th {
 .grid h3 {
   padding: 0;
   margin: 0;
-  text-shadow: 1px 1px 10px #e6ffff;
 }
 
 .grid__item {
-  background-color: var(--grid-color);
+  background-color: var(--primary-color);
   padding: 10px 25px;
   /* Set width to auto */
   width: auto;
   border-radius: 1px 45px;
-  color: white;
+  color: var(--light-font);
+  text-align: center;
 }
 
-.grid a {
-  color: #9ACD32;
+.grid__item a {
+  color: var(--secondary-color);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .grid__item:last-child {
@@ -353,38 +338,27 @@ table.experience td, table.experience th {
   align-items: center;
 }
 
-/* Footer on all pages */
 .page-footer {
-  clear: both;
   display: flex;
-  flex-direction: column;
-  text-align: center;
-  padding-top: 50px;
+  position: fixed;
+  bottom: 0;
+  background-color: var(--primary-color);
+  margin: auto;
+  width: 100%;
+  height: 4%;
+  z-index: 100;
 }
 
-.page-footer span {
-  padding: 5px 15px;
-  display: inline-block;
-  background: var(--span-color);
-  border-radius: 1px 20px;
+.page-footer__item {
+  margin: 0 auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
-.about span,
-.myself span {
-    padding: 0px 5px;
-    display: inline-block;
-    background: var(--span-color);
-    border-radius: 1px 15px;
-}
-
-#CV {
-  color: var(--light-font);
-}
-
-/* text under profile picture */
 @media all and (max-width: 650px) {
   .profile__portrait,
-  .project__picture {
+  .project__picture,
+  .berlin-illustration {
     display: block;
     width: 100%;
     max-width: 100%;
