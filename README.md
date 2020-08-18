@@ -8,5 +8,4 @@ I started building this website upon starting the CF Full-Stack Web Development 
 - new SVG animation
 - contact form
 - navbar animation
-- design makeover
-- fixed footer
+- design updates
