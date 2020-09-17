@@ -89,6 +89,7 @@ a:focus {
   border-bottom: 2px solid var(--border-color);
   transition-duration: 0.5s;
   transition-property: opacity;
+  outline: none;
 }
 
 button:hover,
@@ -387,11 +388,64 @@ span.emoji {
 }
 
 /* contact.html */
+.contact-form {
+  margin-top: 80px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+  display: block;
+}
+
+form {
+  display: inline-block;
+  max-width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+input[type=text], 
+input[type=email], 
+textarea {
+  width: 100%;
+  padding: 15px;
+  padding-left: 30px;
+  border: 1px solid var(--primary-color);
+  border-radius: 40px;
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  resize: none;
+  outline: none;
+  overflow: auto;
+}
+
+textarea {
+  height: 150px;
+}
+
+input[type=text]:focus, 
+input[type=email]:focus, 
+textarea:focus {
+  background-color: #00808038;
+  border-color: var(--secondary-color);
+}
+
+label {
+  float: left;
+  margin-left: 30px;
+}
+
+.status {
+  margin-bottom: 20px;
+}
+
 .contact-details {
   max-width: 700px;
   margin: 0 auto;
   padding: 50px;
-  padding-top: 80px;
+  padding-top: 10px;
+  padding-bottom: 80px;
   text-align: center;
   vertical-align: middle;
 }
@@ -441,6 +495,10 @@ span.emoji {
 
   h1 {
     font-size: 22px;
+  }
+
+  form {
+    max-width: 80%;
   }
 }
 

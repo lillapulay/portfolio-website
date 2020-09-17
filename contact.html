@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta name="description" content="Lilla Pulay - Portfolio">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <link rel="shortcut icon" href="img/favicon.ico">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
   <title> Contact </title>
   <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css"
@@ -35,31 +38,46 @@
     </nav>
   </header>
 
-  <!-- Hiding contact form for now - contact details on the left, form on the right
-    <div class="contact-form">
-      <h1>Send me a message</h1>
-      <form action="#" method="post" id="contact-form">
-        <label class="standard-label" for="contact-email"> Email*: </label>
-        <input type="email" id="contact-email" required>
-        <br><br>
+  <!-- Working on the contact form - still needs styling -->
+  <div class="contact-form">
+    <h1>Send me a message</h1>
+    <!-- Using Formspree to send messages to my email, for now -->
+    <form action="https://formspree.io/xvovplnl" method="POST" id="contact-form">
 
-        <label class="standard-label" for="contact-tel"> Telephone: </label>
-        <input type="tel" id="contact-tel" pattern="\d{3}[\-]\d{3}[\-]\d{4}" title="Please use the following format: 123-456-7890">
-        <br><br>
+      <label class="standard-label" for="contact-fname">
+        First name*:
+      </label>
+      <input type="text" maxlength="20" placeholder="Your first name" id="contact-fname" name="fname" required>
 
-        <label class="standard-label" for="contact-message"> Message*: </label>
-        <textarea required maxlength="240" id="contact-message" title="Maximum 240 characters"></textarea>
-        <br><br>
-        <button class="button__secondary" type="submit" value="Send message">Send message</button>
-      </form>
-    </div>
-  -->
+      <label class="standard-label" for="contact-lname">
+        Last name*:
+      </label>
+      <input type="text" maxlength="20" placeholder="Your last name" id="contact-lname" name="lname" required>
+
+      <label class="standard-label" for="contact-email">
+        Email*:
+      </label>
+      <input type="email" placeholder="Your email address" id="contact-email" name="email" required>
+
+      <label class="standard-label" for="contact-message">
+        Message*:
+      </label>
+      <textarea maxlength="500" placeholder="Your message" id="contact-message" name="message"
+        title="Maximum 500 characters" required></textarea>
+      <!-- textarea opening and closing tag should be on the smae line, otherwise a newline character occupies it -->
+
+      <div class="status"></div>
+
+      <button id="submit" class="button__secondary" value="Send message">
+        Send message
+      </button>
+    </form>
+  </div>
 
   <div class="contact-details">
     <h1>Contact details</h1>
     <p>
       Location: Lelystad, Netherlands <br>
-      <br>
       Email: <a href="mailto:pulaylilla@gmail.com">pulaylilla@gmail.com</a><br>
       Phone: <a href="tel:+31622022917" aria-label="phone number +3 1. 6 2. 2 0 2. 2 9. 1 7.">+31 62 202 29 17</a><br>
       Skype: <a href="skype:pulaylilla_1">pulaylilla_1</a><br>
@@ -72,11 +90,12 @@
           title="GitHub"></a>
       <a href="https://twitter.com/lillapulay" target="_blank"><img src="img/twitter_icon.svg" alt="twitter"
           title="Twitter"></a>
-      <a href="https://www.linkedin.com/in/lilla-pulay/" target="_blank"><img src="img/linkedin_icon.svg"
-          alt="linkedin" title="LinkedIn"></a>
+      <a href="https://www.linkedin.com/in/lilla-pulay/" target="_blank"><img src="img/linkedin_icon.svg" alt="linkedin"
+          title="LinkedIn"></a>
     </div>
   </footer>
   <script src="js/tota11y.min.js"></script>
+  <script src="js/scripts.js"></script>
 
 </body>
 
