@@ -6,6 +6,5 @@ I started building this website upon starting the CF Full-Stack Web Development 
 
 ## Planned updates:
 - new SVG animation
-- contact form
 - navbar animation
 - hamburger menu for small screens
