@@ -5,7 +5,7 @@
 ## About
 I started building this website when I began to study Web Development. Since I enjoy coding everything from scratch, I'm not in a hurry to incorporate too many libraries. For now, I only use a touch of jQuery for my contact form, but I'm never out of ideas and currently working on new updates. 
 
-View the hosted website [here](https://lillapulay.dev/).
+View the **hosted website** [here](https://lillapulay.dev/).
 
 ## Planned updates:
 - [x] Styling updates
