@@ -17,9 +17,8 @@
 
 <body>
 
-  <header class="page-header">
-    <a href="index.html"><img src="img/lilla-pulay-logo.png" alt="Personal logo of Lilla Pulay"
-        class="page-header__item"></a>
+  <header class="page-header lineSlide">
+    <img src="img/lilla-pulay-logo.png" alt="Personal logo of Lilla Pulay" class="page-header__item logo">
     <nav class="main-navigation page-header__item">
       <ul role="menubar" class="navigation-list">
         <li role="presentation">
@@ -57,14 +56,14 @@
       <label class="standard-label" for="contact-email">
         Email*:
       </label>
-      <input type="email" placeholder="Your email address" id="contact-email" name="email" required>
+      <input type="email" maxlength="50" placeholder="Your email address" id="contact-email" name="email" required>
 
       <label class="standard-label" for="contact-message">
         Message*:
       </label>
       <textarea maxlength="500" placeholder="Your message" id="contact-message" name="message"
         title="Maximum 500 characters" required></textarea>
-      <!-- textarea opening and closing tag should be on the smae line, otherwise a newline character occupies it -->
+      <!-- textarea opening and closing tag should be on the same line, otherwise a newline character occupies it -->
 
       <div class="status"></div>
 

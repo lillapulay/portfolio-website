@@ -19,7 +19,7 @@ $(document).ready(function () { // Ready: because we load the file in the head t
       statusElm.append('<div>Last name has to be 1-20 characters.</div>')
     }
 
-    if (!(email.length > 5 && email.includes('@') && email.includes('.'))) { // Email has to be 5+ chars, include @ and .
+    if (!(email.length > 5 && email.length < 51 && email.includes('@') && email.includes('.'))) { // Email has to be 5-50 chars, include @ and .
       event.preventDefault()
       statusElm.append('<div>Please enter a valid email address.</div>')
     }
