@@ -20,6 +20,25 @@
   box-sizing: border-box;
 }
 
+/* Styling the scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: white; 
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: var(--secondary-color); 
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #99cd32b6; 
+}
+
 body {
   font-family: 'Lora', sans-serif;
   font-weight: 400;
