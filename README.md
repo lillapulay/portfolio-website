@@ -14,7 +14,7 @@ View the **hosted website** [here](https://lillapulay.dev/).
 - [x] Scrollbar styling
 - [ ] New SVG animation - I'm still looking for a more relevant image that I like
 - [x] Navbar animation on big screens
-- [ ] Hamburger menu for small screens
+- [x] Hamburger menu for small screens
 - [ ] Content update for 'About me'
 - [x] Adding my latest project (React Native chat app)
 - [ ] Updating project descriptions (plus more images)
