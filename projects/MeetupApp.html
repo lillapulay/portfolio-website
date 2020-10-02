@@ -6,15 +6,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
   <link rel="shortcut icon" href="../img/favicon.ico">
-  <title> Meetup App - Projects </title>
+  <title> MeetUp App - Projects </title>
   <link href="https://fonts.googleapis.com/css?family=Lora:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css"
     href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="../css/styles.css">
 </head>
+</head>
 
 <body>
-
   <header>
     <nav>
       <img src="../img/lilla-pulay-logo.png" alt="Personal logo of Lilla Pulay" class="logo">
@@ -36,33 +36,97 @@
     <h1>Meetup App</h1>
     <div class="project-description">
       <img src="../img/meetup.PNG" class="project__picture" alt="Screenshot of the app">
+
       <h2>Description</h2>
       <p>
-        MeetUp application created by create-react-app, utilizing the MeetUp API.
-        The aim of this project was to learn different ways of testing and included aspects of both Test-Driven
-        Development and Behavior-Driven Development:
-      <ul>
-        <li>Unit Testing</li>
-        <li>Integration Testing</li>
-        <li>Acceptance Testing</li>
-        <li>End-to-End Testing.</li>
-      </ul>
-      The app was built into a Progressive Web Application (PWA).
-      During the process, it required gaining experience with Continuous Delivery and Object-Oriented Programming.
-      The app has offline availability and includes data visualisation (number of events).<br>
-      This project was part of the CF Full-Stack Web Development course.
+        MeetUp application created by create-react-app, utilizing a serverless backend
+        with AWS Lambda and fetching events from the MeetUp API.
+        The app was built into a Progressive Web Application (PWA) and passed
+        Lighthouse's PWA checklist. <br>
+        This process required gaining experience
+        with Continuous Delivery and Intergration, and Object-Oriented Programming.<br><br>
+        The app has offline availability with the help of a service worker, includes
+        data visualisation (number of events) and uses the OAuth2 authentication flow.
+        The API calls are made with Axios and use asynchronous functionality.
+        The app used Atatus for Application Performance Monitoring (trial version)
+        and it was part of the CF Full-Stack Web Development course.
       </p>
+      <p>
+        <a href="https://lillapulay.github.io/meetup/" target="_blank">See website</a>
+        (Requires MeetUp account.)<br>
+        <a href="https://github.com/lillapulay/meetup" target="_blank">See code on GitHub</a>
+      </p>
+
       <div>
+        <h2>Testing</h2>
+        <img src="../img/meetupmobile.png" class="project__picture" alt="Mobile version of the app">
+        <p>
+          The aim of this project was to learn different ways of testing and included aspects
+          of both Test-Driven Development and Behavior-Driven Development:
+        <ul>
+          <li>Unit Testing</li>
+          <li>Integration Testing</li>
+          <li>Acceptance Testing</li>
+          <li>End-to-End Testing.</li>
+        </ul>
+        </p>
+        <p>
+          Tools used:
+        <ul>
+          <li>Enzyme</li>
+          <li>Jest Cucumber</li>
+          <li>Puppeteer.</li>
+        </ul>
+        </p>
         <p class="testscenarios-button">
           <a href="../files/Test_Scenarios.pdf" class="button" target="_blank">View test scenarios</a>
         </p>
-        <a href="https://lillapulay.github.io/meetup/" target="_blank">See website</a><br>
-        <a href="https://github.com/lillapulay/meetup" target="_blank">See code on GitHub</a>
       </div>
-      <h2>Planned updates</h2>
+
+      <div>
+        <h2>User stories</h2>
+        <img src="../img/logotitle.png" class="project__picture" alt="Logo of the app">
+        <p>The project brief required the following user stories to be fulfilled:</p>
+        <ol>
+          <li>As a user, I would like to be able to filter events by city so that I can see
+            the list of events that take place in that city.</li>
+          <li>As a user, I would like to be able to show/hide event details so that I can see
+            more/less information about an event.</li>
+          <li>As a user, I would like to be able to specify the number of events I want to view
+            in the app so that I can see more or fewer events in the events list at once.</li>
+          <li>As a user, I would like to be able to use the app when offline so that I can see
+            the events I viewed the last time I was online.</li>
+          <li>As a user, I would like to be able to add the app shortcut to my home screen so
+            that I can open the app faster.</li>
+          <li>As a user, I would like to be able to see a chart showing the number of upcoming
+            events in a city by date so that I know on which days I can attend Meetup events.</li>
+        </ol>
+      </div>
+
+      <h2>Key features</h2>
+
+      <img src="../img/piechart.png" class="project__picture" alt="Pie chart">
+      <p>Extracted from the user stories above, the following requirements were laid out:</p>
+      <ol>
+        <li>Filter events by city.</li>
+        <li>Show/hide event details.</li>
+        <li>Specify number of events.</li>
+        <li>Use the app when offline.</li>
+        <li>Add app shortcut to the home screen.</li>
+        <li>View a chart showing the number of upcoming events by date.</li>
+      </ol>
+      <p>
+        If the required data is available in the MeetUp API, the app renders a pie chart
+        displaying the number of available/taken spots.
+      </p>
+
+      <h2>Updates</h2>
       <ul>
-        <li>styling updates</li>
-        <li>pie chart placement</li>
+        <li>Create consistent styling
+          (background image, logo, personal logo, titles, color, scrollbar)
+          &#10003;</li>
+        <li>Improve pie chart placement (only when "Details" are visible)
+          &#10003;</li>
       </ul>
     </div>
     <a href="../projects.html"> Back to all projects </a>
