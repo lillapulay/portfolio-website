@@ -36,10 +36,8 @@
   }
 }
 
-/* General styles */
-html {
-  scroll-behavior: smooth;
-}
+/* General styling */
+html { scroll-behavior: smooth }
 
 body {
   background: var(--clr-light);
@@ -49,6 +47,71 @@ body {
   font-size: var(--fs-body);
   line-height: 1.6;
 }
+
+/* Outline on clickable items - buttons, some images */
+:focus {
+  outline: 3px solid var(--clr-accent);
+  outline-offset: 3px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: .5em 2.5em;
+  background: var(--clr-accent);
+  color: var(--clr-dark);
+  text-decoration: none;
+  cursor: pointer;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: var(--fw-bold);
+  transition: transform 200ms ease-in-out;
+}
+
+.btn:hover { transform: scale(1.1) }
+
+/* Typography */
+/* Headings */
+h1,
+h2,
+h3 {
+  line-height: 1;
+  margin: 0;
+}
+
+h1 { font-size: var(--fs-h1) }
+h2 { font-size: var(--fs-h2) }
+h3 { font-size: var(--fs-h3) }
+
+/* Highlighted/emphasised text */
+strong { 
+  font-weight: var(--fw-bold) 
+}
+
+/* Sections - general */
+section {
+  padding: 5em 2em;
+}
+
+.section__title {
+  margin-bottom: .25em;
+}
+
+.section__subtitle {
+  margin: 0;
+  font-size: var(--fs-h3);
+}
+
+/* Images */ 
+img {
+  display: block;
+  max-width: 100%;
+}
+
+
+
+
 
 /* Styling the scrollbar */
 ::-webkit-scrollbar {
@@ -69,7 +132,10 @@ body {
 }
 
 
-/* NEW NAVBAR */
+
+
+
+/* Navbar */
 nav {
   display: flex;
   width: 100%;
@@ -227,6 +293,14 @@ transform: rotate(-45deg) translate(-5px, 6px);
 
 
 
+
+
+
+
+
+
+
+
 /* contact.html */
 .contact-form {
   text-align: center;
@@ -300,11 +374,9 @@ label {
   }
 }
 
-@media all and (max-width: 300px) {
-  .logo {
-    max-width: 70%;
-  }
 
+
+@media all and (max-width: 300px) {
   .nav-links {
     width: 100%;
   }
