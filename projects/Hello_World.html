@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="../img/favicon.ico">
+  <title>Hello World!</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <!-- For social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <img src="../img/lillapulay.png" alt="Lilla Pulay logo" class="logo">
+      <ul role="menubar" class="nav-links">
+        <li role="presentation"><a href="../index.html#home" role="menuitem">Home</a></li>
+        <li role="presentation"><a href="../index.html#services" role="menuitem">My Services</a></li>
+        <li role="presentation"><a href="../index.html#about" role="menuitem">Who I Am</a></li>
+        <li role="presentation"><a href="../index.html#work" role="menuitem">My Work</a></li>
+      </ul>
+      <div class="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Introduction -->
+  <section class="intro project-description">
+    <h1 class="section__title section__title--intro">
+      Hello, <strong>World!</strong>
+    </h1>
+    <p class="section__subtitle section__subtitle--intro project__subtitle">React Native chat app</p>
+    <img src="../img/chatapp.PNG" alt="A screenshot of the project" class="intro__img">
+  </section>
+
+  <div class="portfolio-item-individual">
+    <p>Mobile application written in React Native, utilizing React Navigation and React Native Gifted Chat, amongst
+      others. This project was part of the CF Full-Stack Web Development course.</p>
+    <img src="../img/chatapp.PNG" alt="A screenshot of the project" class="project__img">
+    <p><strong>Check out the <a href="https://github.com/lillapulay/hello-world" target="_blank">GitHub
+          repo</a>.</strong>
+    </p>
+  </div>
+
+  <div class="portfolio-item-individual extra-info">
+    <p class="section__subtitle section__subtitle--intro">Messages</p>
+    <p>The user can log in and send the following types of messages:
+    <ul>
+      <li>text,</li>
+      <li>location,</li>
+      <li>image from camera roll,</li>
+      <li>new photo.</li>
+    </ul>
+    </p>
+  </div>
+
+  <div class="portfolio-item-individual extra-info">
+    <p class="section__subtitle section__subtitle--intro">User stories</p>
+    <p>The project brief contained the following user stories:
+    <ol>
+      <li>As a new user, I want to be able to easily enter a chat room so I can quickly start talking
+        to my friends and family.</li>
+      <li>As a user, I want to be able to send messages to my friends and family members to
+        exchange the latest news</li>
+      <li>As a user, I want to send images to my friends to show them what I’m currently doing.</li>
+      <li>As a user, I want to share my location with my friends to show them where I am.</li>
+      <li>As a user, I want to be able to read my messages offline so I can reread conversations
+        at any time.</li>
+      <li>As a user with a visual impairment, I want to use a chat app that is compatible with a
+        screen reader so that I can engage with a chat interface.</li>
+    </ol>
+    </p>
+  </div>
+
+  <div class="portfolio-item-individual extra-info">
+    <p class="section__subtitle section__subtitle--intro">Key features</p>
+    <p>Extracted from the user stories above, the following requirements were laid out:
+    <ol>
+      <li>A page where users can enter their name and choose a background color for the chat
+        screen before joining the chat.</li>
+      <li>A page displaying the conversation, as well as an input field and submit button.</li>
+      <li>The chat must provide users with two additional communication features: sending
+        images and location data.</li>
+      <li>Data gets stored online and offline.</li>
+    </ol>
+    </p>
+  </div>
+
+  <div class="portfolio-item-individual extra-info">
+    <p class="section__subtitle section__subtitle--intro">Project management</p>
+    <p>During development I kept a simple KanBan board for managing this project, that included using story points for
+      time estimation.
+      You can check out the board here: <strong><a href="https://trello.com/b/NkHbsCSu/native-mobile-chat-app"
+          target="_blank">Native Mobile Chat App</a></strong>.</p>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <a href="mailto:pulaylilla@gmail.com" class="footer__link">pulaylilla@gmail.com</a>
+    <ul class="social-list">
+      <li class="social-list__item">
+        <a class="social-list__link" target="_blank" aria-label="GitHub profile" href="https://github.com/lillapulay">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" target="_blank" aria-label="LinkedIn profile"
+          href="https://linkedin.com/in/lillapulay">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" target="_blank" aria-label="Twitter profile" href="https://twitter.com/lillapulay">
+          <i class="fab fa-twitter"></i></a>
+      </li>
+      <li class="social-list__item">
+        <a class="social-list__link" target="_blank" aria-label="StackOverflow profile"
+          href="https://stackoverflow.com/users/13673487/lillapulay">
+          <i class="fab fa-stack-overflow"></i></a>
+      </li>
+    </ul>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+  <script src="../js/scripts.js"></script>
+</body>
+
+</html>
