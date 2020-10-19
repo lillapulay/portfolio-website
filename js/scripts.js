@@ -1,3 +1,4 @@
+/* CONTACT FORM */
 $(document).ready(function () { // Ready: because we load the file in the head tag
   $("#submit").click(function (event) { // Targets the button and makes it listen to a click event    
 
@@ -43,7 +44,7 @@ const menuSlide = () => {
     // Toggles nav
     nav.classList.toggle('nav-active');
 
-    //Animates links
+    //Animates links - slide in one by one
     navLinks.forEach((link, index) => {
       if (link.style.animation) {
         link.style.animation = '';
