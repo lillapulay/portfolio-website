@@ -1,5 +1,3 @@
-![header](/img/aboutmeheader.PNG)
-
 # Portfolio Website
 
 ## About
