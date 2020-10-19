@@ -18,9 +18,11 @@
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
   /* Colors */
-    --clr-light: #fff;
-    --clr-dark: #004f4f;
-    --clr-accent: #66a5a5;
+  --clr-light: #fff;
+  --clr-dark: #004f4f;
+  --clr-accent: #66a5a5;
+  --clr-accent2: #95bebe;
+  --ft-dark: #003636;
   /* Box shadow */
   --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
         0.125em 0.125em 0.25em rgba(0,0,0,.15);
@@ -59,7 +61,7 @@ body {
   display: inline-block;
   padding: .5em 2.5em;
   background: var(--clr-accent);
-  color: var(--clr-dark);
+  color: var(--ft-dark);
   text-decoration: none;
   cursor: pointer;
   font-size: .8rem;
@@ -155,7 +157,7 @@ nav {
 .burger div{
   width: 25px;
   height: 3px;
-  background-color: var(--clr-accent);
+  background-color: var(--clr-accent2);
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -190,6 +192,8 @@ nav {
 
   .nav-links a {
     font-size: 16px;
+    color: var(--clr-accent2);
+    font-weight: var(--fw-bold);
   }
 
   .nav-links li:first-child {
@@ -244,18 +248,19 @@ transform: rotate(-45deg) translate(-5px, 6px);
     justify-content: flex-end;
     width: 100%;
     margin: 0 auto;
-    padding: 10em 1em;
+    padding: 1em 1em;
     text-align: center;
   } 
 
   .nav-links a {
-    color: var(--clr-light);
+    color: var(--clr-accent2);
     text-decoration: none;
     margin: 0px 10px;
     padding: 10px 10px;
     position: relative;
     z-index: 0;
     cursor: pointer;
+    font-weight: var(--fw-bold);
   }
   
   /* Slide right  */
@@ -279,7 +284,7 @@ transform: rotate(-45deg) translate(-5px, 6px);
 /* Sections - general */
 section {
   padding: 5em 2em;
-  z-index: -2;
+  z-index: 0;
 }
 
 h2 {  
@@ -310,7 +315,8 @@ h2 {
   background: var(--clr-accent);
   padding: .25em 1em;
   font-family: var(--ff-secondary);
-  margin-bottom: 1em;  
+  margin-bottom: 1em;
+  color: var(--ft-dark);
 }
 
 
@@ -408,7 +414,7 @@ h2 {
 }
 
 .section__title--services {
-  color: var(--clr-accent);
+  color: var(--clr-accent2);
   position: relative;
 }
 
@@ -495,7 +501,7 @@ h2 {
 }
 
 .section__subtitle--work {
-  color: var(--clr-accent);
+  color: var(--clr-accent2);
   font-weight: var(--fw-bold);
   margin-bottom: 1em;
 }
