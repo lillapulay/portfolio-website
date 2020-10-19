@@ -95,10 +95,6 @@ img {
   max-width: 100%;
 }
 
-
-
-
-
 /* Styling the scrollbar */
 ::-webkit-scrollbar {
   width: 8px;
@@ -117,11 +113,7 @@ img {
   background: var(--clr-dark); 
 }
 
-
-
-
-
-/* Navbar */
+/* NAVBAR */
 nav {
   display: flex;
   width: 100%;
@@ -214,6 +206,7 @@ nav {
   transform: translateX(0%);
 }
 
+/* Nav link animation in the hamburger menu */
 @keyframes navLinkFade {
   from {
     opacity: 0;
@@ -273,8 +266,6 @@ transform: rotate(-45deg) translate(-5px, 6px);
   }
 }
 
-
-
 /* Sections - general */
 section {
   padding: 5em 2em;
@@ -318,6 +309,39 @@ section {
 
 .section__subtitle--intro {
   display: inline-block;
+}
+
+/* For centering titles and images that would otherwise looks unorganized on smaller screens */
+@media (max-width: 599px) {
+  .intro {    
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+    max-width: 100%;  
+    align-items: center;    
+    text-align: center;
+    display: block;
+  }
+
+  .section__subtitle--intro,
+  .section__subtitle--about {
+    padding: .25em;
+    text-align: center;
+    display: block;
+  }
+
+  .intro__img,
+  .about-me__img {
+    max-width: 80%;    
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .section__title {      
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 @media (min-width: 600px) {
@@ -402,12 +426,13 @@ section {
 
 /* ABOUT ME SECTION */
 .about-me {
-  max-width: 1000px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .about-me__img {
   box-shadow: var(--bs);
+  margin-top: 30px;
 }
 
 @media (min-width: 600px) {
@@ -455,11 +480,12 @@ section {
   margin-bottom: 1em;
 }
 
+/* Set max-width to 500px and add m queries for small screens! */
 .portfolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  /*max-width: 1200px;
-  margin: 0 auto;*/
+  grid-template-columns: repeat(auto-fit, minmax(100px, 300px));
+  justify-content: center;
+  /*max-width: 1200px;*/
 }
 
 .portfolio__item {
